@@ -5,21 +5,21 @@ public class LinearSearch{
     int result = searchExecute(numbers, targetnum);
 
     if(result != -1){
-      System.out.println(targetnum+"'s index key ="+result);
+      System.out.println(targetnum +"'s index key ="+result);
     }else{
       System.out.println("Not found");
     }
   }
 
   public static int searchExecute(int[] numbers, int targetnum){
-    int result = -1;
+    int result = 0;
     int nonumber = -1;
     for(int i = 0; i < numbers.length; i++){
       if(numbers[i] == targetnum){
         result = i;
-        return result;
+        return result;  //ヒットすればindexkeyを返す
       }
     }
-    return nonumber;
+    return nonumber;  //ヒットしなければ-1を返す
   }
 }
