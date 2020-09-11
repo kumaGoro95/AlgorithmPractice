@@ -1,6 +1,6 @@
 public class LinearSearch{
   public static void main(String [] args){
-    int[] numbers = {4,5,9,1,3,8,7,2,6};
+    int[] numbers = {4,5,9,1,3,8,2,7,6};
     int targetnum = 6;
     int result = searchExecute(numbers, targetnum);
 
