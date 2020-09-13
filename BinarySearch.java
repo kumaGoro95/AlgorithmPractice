@@ -9,7 +9,7 @@ public class BinarySearch{
 
   public static void execute(int[] numbers, int targetnum, int tail, int head){
     int result = -1;
-    for(head = 0 ; head < tail ;){
+    while(head <= tail){
       int center = (head + tail) /2;
       if (numbers[center] == targetnum){
         System.out.println("index number is "+center);
